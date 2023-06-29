@@ -1,15 +1,7 @@
 package main
 
-import (
-	"github.com/gin-gonic/gin"
-)
+import "fmt"
 
 func main() {
-	r := gin.Default()
-	r.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "secret_message",
-		})
-	})
-	r.Run(":8080")
+	fmt.Println("Hello!")
 }
